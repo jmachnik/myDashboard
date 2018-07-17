@@ -19,3 +19,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+.idea/
+.idea/**
+.idea/workspace.xml
+.idea/sonarlint/issuestore/index.pb
+/.idea/
+/.idea/sonarlint/issuestore/e/e/eeb2e0b41d8007cbc3acfd7e81094f45b8d00631
