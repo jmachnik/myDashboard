@@ -1,7 +1,7 @@
 import axios from 'axios'
 import LoginForm from "../components/LoginForm";
 import {connect} from 'react-redux'
-import {loginError} from "../actions";
+import {loginError, loginUser} from "../actions";
 /*
 Container wrapper for LoginForm screen
  */
