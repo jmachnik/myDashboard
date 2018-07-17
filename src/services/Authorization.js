@@ -2,16 +2,15 @@ import axios from 'axios'
 import LoginForm from "../components/LoginForm";
 import {connect} from 'react-redux'
 import {loginError} from "../actions";
-
+/*
+Container wrapper for LoginForm screen
+ */
 
 const instance = axios.create({
     baseURL: 'http://dashboardjmachnik.getsandbox.com/',
     timeout: 1000,
 });
 
-const loginUser = (username, password) => {
-
-}
 
 const mapStateToProps = state => ({
     error: state.authorization.error,
