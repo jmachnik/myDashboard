@@ -3,24 +3,26 @@ import {render} from 'react-dom'
 import './index.css';
 import App from './App';
 import {Provider} from 'react-redux'
-import {createStore} from 'redux'
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import combineReducers from './reducers/index'
-import {library} from '@fortawesome/fontawesome-svg-core'
-import {faStroopwafel} from '@fortawesome/free-solid-svg-icons'
 import {persistReducer, persistStore} from "redux-persist";
-import { PersistGate } from 'redux-persist/integration/react'
+import {PersistGate} from 'redux-persist/integration/react'
 import storage from 'redux-persist/lib/storage'
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
-library.add(faStroopwafel)
 const persistConfig = {
     key: 'root',
     storage,
 }
+
 const persistedReducer = persistReducer(persistConfig, combineReducers)
-let store = createStore(persistedReducer)
+const store = createStore(
+    persistedReducer,
+    applyMiddleware(thunk)
+);
 let persistor = persistStore(store)
 
 

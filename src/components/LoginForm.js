@@ -12,7 +12,9 @@ let LoginForm = ({error, login}) => {
     } else {
 
         return (<div className={"login"}>
-                <form onSubmit={() => {login(name.value, password.value)
+                <form onSubmit={(e) => {
+                    e.preventDefault();
+                    login(name.value, password.value)
                 }}>
                     <FormGroup
                         controlId="formBasicText"
@@ -33,7 +35,7 @@ let LoginForm = ({error, login}) => {
                         />
                         <Button type="submit" bsStyle="primary">Login</Button>
                     </FormGroup>
-                    {error}
+                    <span>{error ? "ERROR" : null}</span>
 
 
                 </form>
