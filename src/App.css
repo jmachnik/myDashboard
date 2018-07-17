@@ -1,0 +1,16 @@
+html, body {
+  height: 100%; }
+
+#root {
+  height: 100%;
+  display: grid; }
+
+#root .login {
+  width: 25%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  height: 100%; }
+
+#root .login form {
+  align-self: center; }

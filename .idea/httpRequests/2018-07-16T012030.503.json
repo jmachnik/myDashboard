@@ -1,0 +1,8 @@
+{
+  "errors": [
+    {
+      "message": "Runtime failure",
+      "detailedMessage": "main.js:26 TypeError: Cannot get property \"username\" of null in main.js at line number 26"
+    }
+  ]
+}

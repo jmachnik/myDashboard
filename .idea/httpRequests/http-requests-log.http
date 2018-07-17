@@ -1,0 +1,116 @@
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/resource?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+Token: 123456
+
+<> 2018-07-16T012534.200.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/resource?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+Token: 123456
+
+<> 2018-07-16T012529.401.txt
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/resource?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+Token: 123456
+
+<> 2018-07-16T012528.401.txt
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/resource?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+Token: 123456
+
+<> 2018-07-16T012517.401.txt
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/resource?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012502.401.txt
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012447.200.json
+
+###
+
+POST http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012342.400.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012327.200.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012109.200.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012030.503.json
+
+###
+
+POST http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012027.400.json
+
+###
+
+POST http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T012013.400.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login?username=test@example.com
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T011925.503.json
+
+###
+
+GET http://dashboardjmachnik.getsandbox.com/jakubmachnik/dashboard/1.0.0/login
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-16T011741.401.txt
+
+###
+

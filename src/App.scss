@@ -1,0 +1,21 @@
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: grid;
+  .login {
+    width: 25%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    form {
+      align-self: center;
+    }
+
+    height: 100%;
+
+  }
+}

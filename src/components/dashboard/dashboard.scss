@@ -1,0 +1,32 @@
+.dashboard {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "header header" "menu content";
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 90%;
+
+  .header {
+    grid-area: header;
+    color: darkblue;
+  }
+  .menu {
+    grid-area: menu;
+    li {
+      text-align: center;
+    }
+  }
+  .content {
+    grid-area: content;
+    .panel {
+      margin: 0px;
+    }
+  }
+  > * {
+    padding: 15px;
+  }
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}

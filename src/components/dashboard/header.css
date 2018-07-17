@@ -1,0 +1,11 @@
+.header span {
+  color: papayawhip;
+  font-size: 24px;
+  font-weight: bold; }
+
+.header .app-name {
+  float: left; }
+
+.header .user {
+  float: right;
+  font-size: 18px; }

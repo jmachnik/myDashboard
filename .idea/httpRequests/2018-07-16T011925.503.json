@@ -1,0 +1,8 @@
+{
+  "errors": [
+    {
+      "message": "Runtime failure",
+      "detailedMessage": "main.js:27 TypeError: Cannot get property \"name\" of null in main.js at line number 27"
+    }
+  ]
+}
