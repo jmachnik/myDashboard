@@ -8,10 +8,10 @@ export const REGISTER_USER = 'REGISTER_USER';
 export const LOGIN_USER = 'LOGIN_USER';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
-export const LOGIN = 'LOGIN'
+export const LOGOUT = 'LOGOUT';
 
 /*
- * action creators
+ * Authentications
  */
 export function login(username, password) {
     return dispatch => {
@@ -44,4 +44,27 @@ export function loginSuccess(username, token) {
 
 export function loginError() {
     return {type: LOGIN_ERROR}
+}
+export function logout() {
+    return {type: LOGOUT}
+}
+
+
+/*
+ * Posts
+ */
+
+export const GET_POST_ASYNC = 'GET_POST';
+export const CREATE_POST = 'CREATE_POST';
+
+
+export function getPostAsync(posts) {
+    return {type: GET_POST_ASYNC, posts}
+}
+
+export function getPosts() {
+    return dispatch => {
+        dashboardApi.get("jakubmachnik/dashboard/1.0.0/post")
+            .then(resp => dispatch(getPostAsync(resp.data)))
+    }
 }

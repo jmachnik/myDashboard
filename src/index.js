@@ -10,9 +10,10 @@ import combineReducers from './reducers/index'
 import {persistReducer, persistStore} from "redux-persist";
 import {PersistGate} from 'redux-persist/integration/react'
 import storage from 'redux-persist/lib/storage'
-import { createStore, applyMiddleware } from 'redux';
+import {applyMiddleware, createStore} from 'redux';
 import thunk from 'redux-thunk';
-
+import logger from 'redux-logger'
+import { saveToken } from 'api';
 const persistConfig = {
     key: 'root',
     storage,
@@ -21,10 +22,12 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, combineReducers)
 const store = createStore(
     persistedReducer,
-    applyMiddleware(thunk)
+    applyMiddleware(thunk, logger)
 );
-let persistor = persistStore(store)
 
+store.subscribe(saveToken)
+
+let persistor = persistStore(store)
 
 render(
     <Provider store={store}>

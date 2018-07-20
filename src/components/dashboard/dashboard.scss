@@ -3,7 +3,7 @@
   width: 100%;
   display: grid;
   grid-template-areas: "header header" "menu content";
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 85%;
   grid-template-rows: 10% 90%;
 
   .header {
@@ -12,6 +12,7 @@
   }
   .menu {
     grid-area: menu;
+    padding-left: 15px;
     li {
       text-align: center;
     }

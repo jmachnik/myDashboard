@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from "./Header";
 import {connect} from 'react-redux'
 import Menu from "./Menu";
 import './dashboard.css'
@@ -7,6 +6,8 @@ import {Panel} from "react-bootstrap";
 import Users from "./Users";
 import Summary from "./Summary";
 import {Route, Switch} from "react-router-dom";
+import AllPosts from "./posts/AllPosts";
+import Header from "./Header";
 
 let Dashboard = (props) => {
     return (
@@ -17,6 +18,7 @@ let Dashboard = (props) => {
                 <Switch className="container">
                     <Route path={'/dashboard/summary'} exact component={Summary}/>
                     <Route path={'/dashboard/users'} exact component={Users}/>
+                    <Route path={'/dashboard/posts'} exact component={AllPosts}/>
                     <Route path="" exact render={() => <div>Content</div>}/>
                 </Switch>
             </Panel>
